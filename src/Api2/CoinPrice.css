@@ -1,0 +1,64 @@
+* {
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a1c; */
+}
+
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  color: #fff;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234f3d6d' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+  color: #e2e2e2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.coin-input {
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 16px;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+
+  color: #e2e2e2;
+}
+
+.coin-input::placeholder {
+  color: #e2e2e2;
+}
+.btn-coinprice {
+  padding: 25px;
+  color: #ffffff;
+}
+.btn-coin-btn {
+  background-color: #000000;
+  width: 300px;
+  height: 45px;
+  border-color: rgb(194, 3, 3);
+}
