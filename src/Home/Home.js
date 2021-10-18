@@ -5,8 +5,8 @@ import { useHistory } from "react-router-dom";
 function Home() {
   const history = useHistory();
 
-    return (
-        <>
+  return (
+    <>
       <div className="Home-app">
         <div className="font-up">
           <h1>Teachin Eaksuverapong</h1>
@@ -20,7 +20,13 @@ function Home() {
 
         <div className="btn-p">
           <button className="btn-app" onClick={() => history.push({ pathname: "/Multipage" })} >
-            MultiPages Web
+            SinglePage
+          </button>
+        </div>
+
+        <div className="btn-p">
+          <button className="btn-app" onClick={() => history.push({ pathname: "/WebMain" })}>
+            MultiPages Responsive
           </button>
         </div>
 
@@ -48,10 +54,9 @@ function Home() {
           </button>
         </div>
 
-
       </div>
     </>
-    )
+  )
 }
 
 export default Home

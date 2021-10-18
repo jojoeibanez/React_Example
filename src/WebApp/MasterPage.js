@@ -27,35 +27,38 @@ export default function MasterPage({ ...props }) {
     return (
         <>
             <Layout style={{ minHeight: '100vh' }} >
-                <Sider collapsible theme="light" style={{ border: "0.2px solid " }}>
-                    <div className="logo" style={{ border: "1px solid", height: "100px" }}>
+                <Sider collapsible theme="dark" style={{}}>
+                    <div className="logo" style={{ border: "1px solid", height: "50px" }}>
                         <>
-                            <Icon icon="line-md:home-md-twotone" width="198" height="80" />
+                        <Icon icon="icon-park-outline:more-app" color="#8393de" width="30" height="30" />
+                        <Icon icon="icon-park-outline:more-app" color="#8393de" width="40" height="40" />
                         </>
                     </div>
-                    {/* <div style={{
+                    <div style={{
                         padding: "10px",
                         color: "gray",
                     }}>
-                      
-                    </div> */}
+
+                    </div>
                     {`Root/${state && state}`}
-                    <Menu theme="light"
+                    <Menu theme="dark"
                         //  defaultSelectedKeys={['sub1']} 
                         mode="inline">
-                        <Menu.Item key="1" icon={<PieChartOutlined />} onClick={() => {
-                            
+                        <Menu.Item key="1" icon={<PieChartOutlined />} 
+                        onClick={() => {
                             history.push({ pathname: "/WebApp/DashBoard" });
-
                         }}>
                             Dashboard
                         </Menu.Item>
-                        <Menu.Item key="2" icon={<DesktopOutlined />} onClick={() => {
+
+                        <Menu.Item key="2" icon={<DesktopOutlined />} 
+                        onClick={() => {
                             setState("Covid-19");
-                            history.push({ pathname: "/root/covid" });
+                            history.push({ pathname: "/WebApp/Covid" });
                         }}>
                             Covid-19
                         </Menu.Item>
+
                         <SubMenu key="sub1" icon={<UserOutlined />} title="User">
                             <Menu.Item key="3" onClick={() => {
                                 setState("User/Tom");
@@ -75,29 +78,33 @@ export default function MasterPage({ ...props }) {
                             <Menu.Item key="6" onClick={() => setState("Team/Team 1")}>Team 1</Menu.Item>
                             <Menu.Item key="7" onClick={() => setState("Team/Team 2")} >Team 2</Menu.Item>
                         </SubMenu>
-                        <Menu.Item key="8" onClick={() => history.push({ pathname: "/root/Google" })}  >
-                            <Icon icon="emojione-v1:money-bag" /> Expenses Account
+
+                        <Menu.Item key="8" icon={<Icon icon="emojione-v1:money-bag" />} 
+                        onClick={() => history.push({ pathname: "/WebApp/Expenses" })}  >
+                            Expenses Account
                         </Menu.Item>
 
-                        <Menu.Item key="9" onClick={() => {
+                        <Menu.Item key="9" icon={<Icon icon="openmoji:dog-face" />} 
+                        onClick={() => {
                             setState("This Price is Current!!");
                             history.push({ pathname: "/root/DogeCoin" });
                         }}>
-                            <Icon icon="openmoji:dog-face" /> DogeCoin
+                            DogeCoin
                         </Menu.Item>
 
-                        <Menu.Item key="10" onClick={() => {
+                        <Menu.Item key="10" icon={<Icon icon="icon-park:comments" />} 
+                        onClick={() => {
                             setState("Rating");
                             history.push({ pathname: "/root/Rating" });
                         }}>
-                            <Icon icon="icon-park:comments" /> Rating
+                            Rating
                         </Menu.Item>
 
-                        <Menu.Item danger="true" key="10" onClick={() => {
+                        <Menu.Item danger="true" key="10" icon={<Icon icon="fxemoji:downpointingredtriangle" />} onClick={() => {
                             setState("HomePage");
                             history.push({ pathname: "/home" });
                         }}>
-                            <Icon icon="fxemoji:downpointingredtriangle" /> HomePage
+                            HomePage
                         </Menu.Item>
 
                     </Menu>

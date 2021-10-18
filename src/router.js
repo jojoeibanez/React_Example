@@ -11,11 +11,19 @@ import CoinPrice from "./Api2/CoinPrice";
 import MasterPage from "./WebApp/MasterPage";
 import Success from "./LoginRegis/Success"
 import Account from "./LoginRegis/Account";
+import WebMain from "./WebApp2/WebMain"
+import Covid from "./WebApp/Covid";
+import Expenses from "./WebApp/Expenses"
+
+
 export default function Router() {
     return (
         <>
             <BrowserRouter>
+
                 <Switch>
+                    <Route path="/" exact component={Home} />
+
                     <Route path="/Home" exact component={Home} />
 
                     <Route path="/Resume" component={Resume} />
@@ -33,6 +41,11 @@ export default function Router() {
 
                     <Route path="/WebApp" exact component={MasterPage} />
                     <Route path="/WebApp/DashBoard" component={DashBoard} />
+                    <Route path="/WebApp/Covid" component={Covid} />
+                    <Route path="/WebApp/Expenses" component={Expenses} />
+
+                    <Route path="/WebMain" component={WebMain} />
+
 
 
                 </Switch>

@@ -71,9 +71,6 @@ export default function Login() {
                     
 
                 >
-                    <div className="test">
-                        555
-                    </div>
                     <Form.Item
                         label="Username"
                         name="username"

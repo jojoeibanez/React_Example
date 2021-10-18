@@ -3,7 +3,7 @@
 import './CoinPrice.css';
 // import Coin from './Coin';
 // import { Icon } from '@iconify/react';
-// import { useHistory } from "react-router";
+import { useHistory } from "react-router";
 
 import Icon from "@ant-design/icons/lib/components/Icon";
 import axios from "axios";
@@ -77,6 +77,7 @@ import Coin from "./Coin";
 
 
 export default function CoinPrice() {
+  const history = useHistory();
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
@@ -129,7 +130,7 @@ export default function CoinPrice() {
         />
       )}
       <div className="btn-coinprice">
-        <button className="btn-coin-btn" >
+        <button onClick={() => history.push({ pathname: "/home" })} className="btn-coin-btn" >
           Back to HomePage
         </button>
       </div>

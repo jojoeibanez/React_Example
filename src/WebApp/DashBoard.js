@@ -4,6 +4,8 @@ import { Breadcrumb, Card, Row, Col, Table, Modal, Form, Input, Spin, Divider, P
 import { HomeOutlined, UserOutlined, EditOutlined, DeleteOutlined, LoadingOutlined } from '@ant-design/icons';
 import Axios from "axios";
 
+
+
 const { Column } = Table;
 const { Option } = Select;
 
@@ -21,7 +23,8 @@ export default function DashBoard() {
     const [formAdd] = Form.useForm();
     const [formEdit] = Form.useForm();
 
-    const url = ""
+
+    const url = "https://sheet.best/api/sheets/e20d97cc-6dc0-4398-a0f4-f92e933f7023"
     //https://sheet.best/api/sheets/e20d97cc-6dc0-4398-a0f4-f92e933f7023
     //filter
     const [filterData, setFilterData] = useState(null);
@@ -121,7 +124,7 @@ export default function DashBoard() {
     const onFinish = (values) => {
         editDataExcel(values)
     };
-    
+
 
     const deleteData = async (param) => {
         // setLoading(true);
@@ -163,22 +166,22 @@ export default function DashBoard() {
             <Row>
                 <Col xs={24} sm={12} md={8} lg={6} xl={6}>
                     <Card style={{ width: 300 }} hoverable onClick={() => setState("Dash Board1")}>
-                        <p>Dash Board</p>
+                        <p>Dash Board 1</p>
                     </Card>
                 </Col>
                 <Col xs={24} sm={12} md={8} lg={6} xl={6}>
                     <Card style={{ width: 300 }} hoverable onClick={() => setState("Dash Board2")}>
-                        <p>Dash Boar2</p>
+                        <p>Dash Board 2</p>
                     </Card>
                 </Col>
                 <Col xs={24} sm={12} md={8} lg={6} xl={6}>
                     <Card style={{ width: 300 }} hoverable>
-                        <p>Dash Board</p>
+                        <p>Dash Board 3</p>
                     </Card>
                 </Col>
                 <Col xs={24} sm={12} md={8} lg={6} xl={6}>
                     <Card style={{ width: 300 }} hoverable>
-                        <p>Dash Board</p>
+                        <p>Dash Board 4</p>
                     </Card>
                 </Col>
             </Row>
@@ -187,7 +190,10 @@ export default function DashBoard() {
                     <Select
                         showSearch
                         allowClear
-                        style={{ width: 200 }}
+                        style={{
+                            width: 200,
+                            padding: "20px"
+                        }}
                         placeholder="Select a person"
                         optionFilterProp="children"
                         onChange={(value) => {
@@ -208,15 +214,20 @@ export default function DashBoard() {
                         {/* <Option value="jack">Jack</Option> */}
                     </Select>
                 </Col>
-                <Col span={8} style={{ textAlign: "right" }}>
+                <Col span={8} style={{
+                    textAlign: "right",
+                    paddingTop: "20px"
+                }}>
                     <Input.Search placeholder="ค้นหาข้อมูล" allowClear
                         enterButton
                         onSearch={searchDataExcel}
                     />
 
                 </Col>
-                <Col span={2}>
-                    <Button type="primary" style={{ backgroundColor: "green" }} onClick={() => setModalAdd(true)}>ADD</Button>
+                <Col span={2} style={{paddingTop:"20px" }}>
+                    <Button type="primary" style={{ 
+                        backgroundColor: "green"
+                        }} onClick={() => setModalAdd(true)}>ADD</Button>
                 </Col>
             </Row>
 
