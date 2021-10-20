@@ -1,5 +1,3 @@
-
-
 .profile-block {
   display: flex;
   flex-direction: row;
@@ -15,7 +13,6 @@
   padding-left: 30px;
   height: 30px;
   width: 250px;
-  
 }
 
 .btn-class {
@@ -24,11 +21,29 @@
   background-color: rgb(126, 121, 126);
   font-size: 20px;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-  
+  font-family: "Courier New", Courier, monospace;
 }
 
 .btn-last {
   padding-top: 10px;
   padding-left: 1150px;
+}
+
+.image-a {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.image-b {
+  margin: 30px;
+}
+
+.block-a {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 500px;
+  
 }
