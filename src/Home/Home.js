@@ -25,8 +25,8 @@ function Home() {
         </div>
 
         <div className="btn-p">
-          <button className="btn-app" onClick={() => history.push({ pathname: "/WebMain" })}>
-            MultiPages Responsive
+          <button className="btn-app" onClick={() => history.push({ pathname: "/Exp" })}>
+            Experience
           </button>
         </div>
 

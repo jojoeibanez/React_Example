@@ -18,7 +18,7 @@ export default function Login() {
     };
 
     const onFinish = (value) => {
-        Axios.get("https://sheet.best/api/sheets/af71385a-37a0-4d19-9822-e0ffdd1418f5")
+        Axios.get("https://sheet.best/api/sheets/dcbf2025-c8cb-4bf5-8320-0317d42128fd")
 
             .then((res) => {
 
@@ -27,14 +27,14 @@ export default function Login() {
                         alert("WelCome")
                         history.push({ pathname: "/Success" })
                     }
-                    else
-                        alert("Username or Password Wrong!!")
+                    // else
+                    //     alert("")
                 });
             });
     }
 
     useEffect(() => {
-        Axios.get("https://sheet.best/api/sheets/af71385a-37a0-4d19-9822-e0ffdd1418f5")
+        Axios.get("https://sheet.best/api/sheets/dcbf2025-c8cb-4bf5-8320-0317d42128fd")
 
             .then((res) => {
 

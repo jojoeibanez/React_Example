@@ -11,9 +11,21 @@ import CoinPrice from "./Api2/CoinPrice";
 import MasterPage from "./WebApp/MasterPage";
 import Success from "./LoginRegis/Success"
 import Account from "./LoginRegis/Account";
-import WebMain from "./WebApp2/WebMain"
 import Covid from "./WebApp/Covid";
 import Expenses from "./WebApp/Expenses"
+import Rating from "./WebApp/Rating"
+import Susan from "./WebApp/User/Susan";
+import Satya from "./WebApp/User/Satya";
+import Mark from "./WebApp/User/Mark";
+import Team1 from "./WebApp/Team/Team1";
+import Team2 from "./WebApp/Team/Team2";
+import Form from "./WebApp/Form"
+
+import Header from "./WebApp2/Header";
+import Profile from "./WebApp2/Components/Profile"
+import Experience from "./WebApp2/Components/Experience"
+import Skills from "./WebApp2/Components/Skills";
+
 
 
 export default function Router() {
@@ -43,8 +55,20 @@ export default function Router() {
                     <Route path="/WebApp/DashBoard" component={DashBoard} />
                     <Route path="/WebApp/Covid" component={Covid} />
                     <Route path="/WebApp/Expenses" component={Expenses} />
+                    <Route path="/WebApp/Rating" component={Rating} />
 
-                    <Route path="/WebMain" component={WebMain} />
+                    <Route path="/WebApp/User/Susan" component={Susan} />
+                    <Route path="/WebApp/User/Satya" component={Satya} />
+                    <Route path="/WebApp/User/Mark" component={Mark} />
+                    <Route path="/WebApp/Team/Team1" component={Team1} />
+                    <Route path="/WebApp/Team/Team2" component={Team2} />
+                    <Route path="/WebApp/Form" component={Form} />
+
+
+                    <Route path="/Exp" exact component={Header} />
+                    <Route path="/Exp/Profile" component={Profile} />
+                    <Route path="/Exp/Experience" component={Experience} />
+                    <Route path="/Exp/Skills" component={Skills} />
 
 
 
