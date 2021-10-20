@@ -19,22 +19,12 @@ export default function Header(props) {
             <div className="profile-block">
 
                 <div className="profile-btn">
-                    <Button onClick={() => history.push({ pathname: "/Exp/Profile" })} className="btn-class">
-                        Profile
-                    </Button>
-                </div>
-
-                <div className="profile-btn">
                     <Button onClick={() => history.push({ pathname: "/Exp/Experience" })} className="btn-class">
                         Experience
                     </Button>
                 </div>
 
-                <div className="profile-btn">
-                    <Button onClick={() => history.push({ pathname: "/Exp/Skills" })} className="btn-class">
-                        Skills
-                    </Button>
-                </div>
+                
 
                 <div className="btn-last">
                     <Button onClick={() => history.push({ pathname: "/Home" })} className="btn-class">
