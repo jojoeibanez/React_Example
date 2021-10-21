@@ -7,7 +7,7 @@ import './Carousel.css';
 function carousel() {
 
     const contentStyle = {
-        height: '450px',
+        height: '750px',
         color: '#fff',
         lineHeight: '260px',
         textAlign: 'center',
@@ -24,7 +24,7 @@ function carousel() {
                         height="450px"
                         width="100%"
                         style={contentStyle}
-                        src="https://s359.kapook.com/pagebuilder/8c00ed0c-9b38-48bf-abd6-9b1cd8793a3e.jpg"
+                        src="https://gmedia.playstation.com/is/image/SIEPDC/no-mans-sky-huge-hero-desktop-tablet-02-ps4-en-28jul20?$native$"
                     />
                 </div>
             </div>
@@ -34,7 +34,7 @@ function carousel() {
                         height="450px"
                         width="100%"
                         style={contentStyle}
-                        src="https://s359.kapook.com/pagebuilder/1e192cb3-f442-4e95-a0f8-0037da45fcc3.jpg"
+                        src="https://res09.bignox.com/appcenter/th/2020/12/unnamed-1-ocg.png"
                     />
                 </h3>
             </div>
@@ -44,7 +44,7 @@ function carousel() {
                         height="450px"
                         width="100%"
                         style={contentStyle}
-                        src="https://s359.kapook.com/pagebuilder/8c00ed0c-9b38-48bf-abd6-9b1cd8793a3e.jpg"
+                        src="https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/5e482116fef7c60f7f0b7da3/15817854127363854144.jpg"
                     />
                 </div>
             </div>
@@ -54,7 +54,7 @@ function carousel() {
                         height="450px"
                         width="100%"
                         style={contentStyle}
-                        src="https://s359.kapook.com/pagebuilder/1e192cb3-f442-4e95-a0f8-0037da45fcc3.jpg"
+                        src="https://static.trueplookpanya.com/tppy/member/m_845000_847500/845956/cms/images/2019/Screenshot_20200408_152304_com.tgc.sky.android.jpg"
                     />
                 </h3>
             </div>

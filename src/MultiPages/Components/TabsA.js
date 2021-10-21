@@ -9,17 +9,15 @@ const { TabPane } = Tabs;
 
 function TabsA() {
     return (
-        <div>
-            {/* Grid Responesive */}
-            <Tabs className=".ant-tabs-card .ant-tabs-tab-active" defaultActiveKey="1" type="card" style={{
-                marginTop: "35px"
-            }}>
-                <TabPane tab={
-                    <>
-                        <Icon icon="logos:youtube-icon" />
-                        <label>xxxxx</label>
-                    </>
-                } key="1">
+        <div style={{
+            padding:"0",
+        }}>
+            <Tabs className=".ant-tabs-card .ant-tabs-tab-active" defaultActiveKey="1" type="card"
+                style={{
+                    margin: "30px",
+                }
+                }>
+                <TabPane tab="ข่าวด่วน" key="1" >
                     <Row gutter={[16, 16]}>
                         <Col xs={24} sm={12} md={8} lg={6} xl={6}>
                             <Card
@@ -299,6 +297,7 @@ function TabsA() {
                     </Row>
                 </TabPane>
             </Tabs>
+
         </div>
     )
 }
