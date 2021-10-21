@@ -1,11 +1,9 @@
 import { Image, Menu, Row, Col } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { useHistory } from 'react-router-dom';
 import './Header.css'
 import React, { useState } from 'react'
 import Button from '@restart/ui/esm/Button';
 
-import PropTypes from 'prop-types'
 
 
 
@@ -17,14 +15,12 @@ export default function Header(props) {
 
         <div>
             <div className="profile-block">
-
                 <div className="profile-btn">
                     <Button onClick={() => history.push({ pathname: "/Exp/Experience" })} className="btn-class">
                         Experience
                     </Button>
                 </div>
-
-                
+  
 
                 <div className="btn-last">
                     <Button onClick={() => history.push({ pathname: "/Home" })} className="btn-class">
@@ -36,7 +32,6 @@ export default function Header(props) {
 
 
             <div className="block-a">
-
                 <div >
                     <Image
                         preview={{ visible: false }}
@@ -77,117 +72,6 @@ export default function Header(props) {
                         ^^ Click the image above ^^ 
                     </div>
                 </div>
-
-                {/* <Col xs={24} sm={12} md={8} lg={6} xl={6}>
-                        <Image
-                            preview={{ visible: false }}
-                            width={400}
-                            height={200}
-                            src="https://www.betterteam.com/images/forensic-scientist-job-description-6144x3456-20201129.jpeg?crop=16:9,smart&width=1200&dpr=2"
-                            onClick={() => setVisible(true)}
-                        />
-                        <div style={{ display: 'none' }}>
-                            <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                                <Image src="https://drive.google.com/uc?id=15RrvCQWSZMkU49pY_TkD1_nQwbal2jXs" />
-                                <Image src="https://drive.google.com/uc?id=1W5cJZ8eILKb-pz9uAdKz-Ehl6Y1ID_Dj" />
-                                <Image src="https://drive.google.com/uc?id=1w_WOJn5JhRG8ORi0lRzHBDuGAVyZOxlu" />
-                            </Image.PreviewGroup>
-                        </div>
-                        <div style={{ textAlign: "center" }}>
-                            aaaaaaaa
-                        </div>
-                    </Col> */}
-
-
-                {/* <Col xs={24} sm={12} md={8} lg={6} xl={6}>
-                        <Image
-                            preview={{ visible: false }}
-                            width={400}
-                            height={200}
-                            src="https://www.betterteam.com/images/forensic-scientist-job-description-6144x3456-20201129.jpeg?crop=16:9,smart&width=1200&dpr=2"
-                            onClick={() => setVisible(true)}
-                        />
-                        <div style={{ display: 'none' }}>
-                            <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                                <Image src="https://drive.google.com/uc?id=1vlP6uT_w4kEZIGtbuShJfKDeg4ZD6iC4" />
-                                <Image src="https://drive.google.com/uc?id=1mBDUhGIYV7m0jiggaSZVoJA7VlrZY_ql" />
-                                <Image src="https://drive.google.com/uc?id=1EViTnkHHlQvw4T8Y-yppKd0x2Rm8469B" />
-                            </Image.PreviewGroup>
-                        </div>
-                        <div style={{ textAlign: "center" }}>
-                            aaaaaaaa
-                        </div>
-                    </Col> */}
-
-
-                {/* --------------------------------------------------------------------------------------------------- */}
-                {/* <Row className="image-a"> */}
-                {/* <Col xs={24} sm={12} md={8} lg={6} xl={6}>
-                        <Image
-                            preview={{ visible: false }}
-                            width={400}
-                            height={200}
-                            src="https://www.betterteam.com/images/forensic-scientist-job-description-6144x3456-20201129.jpeg?crop=16:9,smart&width=1200&dpr=2"
-                            onClick={() => setVisible(true)}
-                        />
-                        <div style={{ display: 'none' }}>
-                            <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                                <Image src="https://drive.google.com/uc?id=16baajURTnkwG_WpnJbG_U2r1VMwMnTib" />
-                                <Image src="https://drive.google.com/uc?id=17bYBnZ6_rZXHTCcKS7BoZUL5tkfK02xK" />
-                                <Image src="https://drive.google.com/uc?id=1aUEi0UYzib9dxNkg1EGpgsmoU4TKh-9Q" />
-                            </Image.PreviewGroup>
-                        </div>
-                        <div style={{ textAlign: "center" }}>
-                            aaaaaaaa
-                        </div>
-                    </Col> */}
-
-                {/* <Col xs={24} sm={12} md={8} lg={6} xl={6}>
-
-                        <Image
-                            preview={{ visible: false }}
-                            width={400}
-                            height={200}
-                            src="https://www.betterteam.com/images/forensic-scientist-job-description-6144x3456-20201129.jpeg?crop=16:9,smart&width=1200&dpr=2"
-                            onClick={() => setVisible(true)}
-                        />
-                        <div style={{ display: 'none' }}>
-                            <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                                <Image src="https://drive.google.com/uc?id=1AxUGr_CJYTO99vX3spMwuSKdxiNAqwLy" />
-                                <Image src="https://drive.google.com/uc?id=1P6Vkll99q6C_Cg3gpVxws2Z3Uxg0csqK" />
-                                <Image src="https://drive.google.com/uc?id=1ow5h48rS3g07nfUbmYjI2aSiQcXKWMbt" />
-                                <Image src="https://drive.google.com/uc?id=1KoT2Kx78JgdksFNLvyc9TNeIGpe86q2I" />
-                            </Image.PreviewGroup>
-                        </div>
-                        <div style={{ textAlign: "center" }}>
-                            aaaaaaaa
-                        </div>
-                    </Col> */}
-
-
-                {/* <Col xs={24} sm={12} md={8} lg={6} xl={6}>
-
-                        <Image
-                            preview={{ visible: false }}
-                            width={400}
-                            height={200}
-                            src="https://www.betterteam.com/images/forensic-scientist-job-description-6144x3456-20201129.jpeg?crop=16:9,smart&width=1200&dpr=2"
-                            onClick={() => setVisible(true)}
-                        />
-                        <div style={{ display: 'none' }}>
-                            <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                                <Image src="https://drive.google.com/uc?id=1NfNqgUZSzY1pJz8KRL-_6SMVVAREI3lO" />
-                                <Image src="https://drive.google.com/uc?id=1T6LUZPI_R29LCqQgIbXdMGPEFXorCEgX" />
-                                <Image src="https://drive.google.com/uc?id=194xdcoSABVUZ7n2CNr1ZOPjLkT-coQNr" />
-                                <Image src="https://drive.google.com/uc?id=1l6R9yvMzUhCyl4QAlFfvHCaUvdOxoujr" />
-                                <Image src="https://drive.google.com/uc?id=1z-tzJqiEafcM1Z6mX8PtIR49KU8tqrm5" />
-                            </Image.PreviewGroup>
-                        </div>
-                        <div style={{ textAlign: "center" }}>
-                            aaaaaaaa
-                        </div>
-                    </Col> */}
-                {/* </Row> */}
             </div>
         </div>
 
