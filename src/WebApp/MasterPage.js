@@ -36,7 +36,7 @@ export default function MasterPage({ ...props }) {
 
                     </Header>
                     <div>
-aa
+                        aa
                     </div>
                     <div className="logo" style={{ border: "1px solid", height: "50px" }}>
                         <>

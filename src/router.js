@@ -20,12 +20,10 @@ import Mark from "./WebApp/User/Mark";
 import Team1 from "./WebApp/Team/Team1";
 import Team2 from "./WebApp/Team/Team2";
 import Form from "./WebApp/Form"
-
-import Header from "./WebApp2/Header";
-import Profile from "./WebApp2/Components/Profile"
+import Mainpage from "./WebApp2/Mainpage";
 import Experience from "./WebApp2/Components/Experience"
-import Skills from "./WebApp2/Components/Skills";
-
+import Profile from "./WebApp2/Components/Profile";
+import HomeExp from './WebApp2/Components/HomeExp'
 
 
 export default function Router() {
@@ -64,11 +62,14 @@ export default function Router() {
                     <Route path="/WebApp/Team/Team2" component={Team2} />
                     <Route path="/WebApp/Form" component={Form} />
 
-
-                    <Route path="/Exp" exact component={Header} />
-                    <Route path="/Exp/Profile" component={Profile} />
-                    <Route path="/Exp/Experience" component={Experience} />
-                    <Route path="/Exp/Skills" component={Skills} />
+                    <Route path="/HomeExp" component={HomeExp} />
+                    {/* Main คือ หลักๆของเพจ */}
+                    <Route path="/Main" exact component={Mainpage} /> 
+                    {/* Main คือ หลักๆของเพจ */}
+                    <Route path="/Main/Experience" component={Experience} />
+                    <Route path="/Main/Profile" component={Profile} />
+                
+                    
 
 
 

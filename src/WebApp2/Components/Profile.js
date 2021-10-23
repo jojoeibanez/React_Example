@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
-import Header from '../Header';
+import Mainpage from '../Mainpage';
 import './Profile.css'
-
+import Capture from '../Capture.JPG'
 
 
 function Profile() {
     return (
-        <Header>
-            asdasdas <hr/>
-            asdasdas <hr/>
-            asdasdas <hr/>
-            asdasdas <hr/>
-            asdasdas <hr/>
-            asdasdas <hr/>
-            aaaaaaaaaaaaaaaaaaaaaaa
-        </Header>
+        <Mainpage>
+            <div>
+                <img src={Capture} alt=""/>
+                <p>ppppp</p>
+            </div>
+        </Mainpage>
     )
 }
 

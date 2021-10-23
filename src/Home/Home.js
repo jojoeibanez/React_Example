@@ -25,7 +25,7 @@ function Home() {
         </div>
 
         <div className="btn-p">
-          <button className="btn-app" onClick={() => history.push({ pathname: "/Exp" })}>
+          <button className="btn-app" onClick={() => history.push({ pathname: "/HomeExp" })}>
             Experience
           </button>
         </div>
